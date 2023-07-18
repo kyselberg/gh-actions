@@ -1,0 +1,13 @@
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  firrst-job:
+    name: first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: singleline command
+        run: echo "hello world"
+      - name: multiline command
+        run: |
+            echo "bye world"
+            echo "bye world!!!"
